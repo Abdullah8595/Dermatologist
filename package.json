@@ -1,0 +1,17 @@
+{
+  "name": "lumiere-skin-clinic",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Responsive skincare clinic website with Vercel and Neon appointment backend",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "vercel dev",
+    "check": "node --check server.js && node --check script.js && node --check api/appointments.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
