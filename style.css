@@ -5,3 +5,32 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
 .portrait-placeholder{padding:12px;overflow:hidden}.portrait-placeholder img{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:inherit}.doctor-placeholder img{width:100%;height:100%;object-fit:cover;object-position:center top}.gallery-card>img{width:100%;height:280px;object-fit:cover;transition:transform .5s ease}.gallery-card:hover>img{transform:scale(1.035)}.form-success.failure{display:block;background:#fff0f0;color:#a33838}.submit-btn:disabled{opacity:.7;cursor:wait}
 .website-field{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important}
+.clinic-map {
+  width: 100%;
+  height: 280px;
+  margin-top: 28px;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(81, 59, 61, 0.12);
+}
+
+.clinic-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-button {
+  margin-top: 16px;
+}
+
+@media (max-width: 520px) {
+  .clinic-map {
+    height: 230px;
+  }
+
+  .map-button {
+    width: 100%;
+  }
+}
