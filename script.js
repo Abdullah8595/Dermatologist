@@ -97,7 +97,7 @@ form.addEventListener('submit', async event => {
   submitButton.textContent = 'Sending request…';
   try {
     const payload = Object.fromEntries(new FormData(form).entries());
-    const response = await fetch('/api/appointments', { method:'POST', headers:{ 'Content-Type':'application/json' }, body:JSON.stringify(payload) });
+    const response = await fetch('https://api.web3forms.com/submit', { method:'POST', headers:{ 'Content-Type':'application/json' }, body:JSON.stringify(payload) });
     const result = await response.json();
     if (!response.ok) throw new Error(result.message || 'Unable to submit your request.');
     success.textContent = `Thank you! Your booking reference is ${result.reference}. Our team will contact you shortly.`;
